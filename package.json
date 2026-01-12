@@ -1,1 +1,12 @@
-{}
+{
+  "name": "pr-agent-demo",
+  "version": "1.0.0",
+  "description": "PR Agent Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

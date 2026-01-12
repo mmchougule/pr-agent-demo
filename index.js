@@ -2,4 +2,8 @@ function helloWorld() {
   return "Hello, World!";
 }
 
-module.exports = { helloWorld };
+function goodbye() {
+  return "Goodbye!";
+}
+
+module.exports = { helloWorld, goodbye };

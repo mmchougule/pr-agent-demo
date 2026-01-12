@@ -2,4 +2,8 @@ function helloWorld() {
   return "Hello, World!";
 }
 
-module.exports = { helloWorld };
+function multiply(a, b) {
+  return a * b;
+}
+
+module.exports = { helloWorld, multiply };

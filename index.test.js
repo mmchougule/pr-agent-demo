@@ -1,4 +1,4 @@
-const { helloWorld, divide } = require('./index');
+const { helloWorld, divide, subtract } = require('./index');
 
 describe('helloWorld', () => {
   test('should return "Hello, World!"', () => {
@@ -41,5 +41,23 @@ describe('divide', () => {
 
   test('should handle decimal results', () => {
     expect(divide(10, 3)).toBeCloseTo(3.333, 3);
+  });
+});
+
+describe('subtract', () => {
+  test('should subtract two positive numbers', () => {
+    expect(subtract(5, 3)).toBe(2);
+  });
+
+  test('should subtract negative numbers', () => {
+    expect(subtract(-5, -3)).toBe(-2);
+  });
+
+  test('should handle zero', () => {
+    expect(subtract(5, 0)).toBe(5);
+  });
+
+  test('should return a number', () => {
+    expect(typeof subtract(10, 5)).toBe('number');
   });
 });
